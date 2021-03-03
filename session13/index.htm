@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MIS3690 Survey</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<style>
+	td {padding-right:40px}
+
+	</style>
+
+	<script>
+function processForm()
+{
+	var jsImages=document.getElementById("Images")
+	var jsTables=document.getElementById("CSS")
+	var jsTables=document.getElementById("Table")
+	var jsForms=document.getElementById("Forms")
+	if (jsImages.checked== false && jsCSS.checked == false && jsTables.checked== false && jsForms.checked == false)
+{
+	after("Fun topic is required");
+}
+
+else if (document.getElementById("fname").value=="")
+	{
+		alert("First name is required");
+		document.getElementById("fname").focus();
+	}
+	else if (document.getElementById("lname").value=="")
+	{
+		alert("Last name is required");
+		document.getElementById("lname").focus();
+	}
+else if (document.getElementById("year").value=="")
+{
+	alert("Graduation must be between 2020 and 2025");
+	document.getElementById("year").focus();
+}
+
+else if(document.getElementById("year").value<2020 || document.getElementById("year").value > 2025){
+		alert("Graduation must be between 2020 and 2025")
+		document.getElementById("year").value=""
+		document.getElementById("year").focus();
+}
+
+else
+
+{
+	return true;
+}
+	return false;
+}
+ 
+</script>
+</head>
+<body>
+<h1>MIS3690 Student Survey</h1>	
+<p>Please complete the following survey.  You must answer each question.  When you are done,
+please click on the Submit button.
+</p>
+<form action="http://wtspring13sec2.babson.edu/grodriguez3/mailer.php" id="form1" onsubmit="return processForm()">
+<p>First name: 
+	<input type="text" name="fname" size="20" maxlength="20" id="fname"/>
+	Last name: 
+	<input type="text" name="lname" size="20" maxlength="30" id="lname"/>
+</p>
+<p>Gender: Male <input type="radio" name="gender" value="M" />
+	Female <input type="radio" name="gender" value="F" />
+</p>
+<p>What grade do you expect to receive? 
+<select name="grade">
+	<option value="A">A</option>
+	<option value="B">B</option>
+	<option value="C">C</option>
+	<option value="D">D</option>
+	<option value="F">F</option>
+</select>
+
+<p>
+Year of Graduation </p>
+<p input type="number" id="year"></p>
+
+<p>Which chapters did you find to be fun?&nbsp;&nbsp;&nbsp;
+Images <input type="checkbox" id="images" value="i" />&nbsp;&nbsp;&nbsp;&nbsp;  
+Frames <input type="checkbox" id="frames" value="fr" />&nbsp;&nbsp;&nbsp;&nbsp;
+Multimedia <input type="checkbox" id="multimmedia" value="m" />&nbsp;&nbsp;&nbsp;&nbsp;
+
+</p>
+
+
+<p>Please add any comments you have<br /><textarea name="comments" cols="40" rows="4"></textarea>
+</p>
+<p style="text-align:center">
+<input type="submit" name="submit" value="Submit">&nbsp;&nbsp;
+<input type="reset" name="reset" value="Reset" />
+</p>
+</form>
