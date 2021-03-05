@@ -1,0 +1,33 @@
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Roll Dice</title>
+
+	<style>
+	button {position:absolute; top:0px; left:0px}
+
+	</style>
+	
+	<script>
+	function changename()
+	{
+	 var rand1 = Math.floor(Math.random()*500);
+     var rand2 = Math.floor(Math.random()*500);
+     document.getElementById(".clickme").style.left = rand2+ "px";
+     document.getElementById(".clickme").style.top = rand1+ "px";
+     var changename = new Array ("Click Me", "Move me", "Click Here", "Button", "Next");
+     var b = document.getElementById(".clickme");
+     b.innerHTML=changename[Math.floor(Math.random()*5)];
+	}
+	</script>
+  </head>
+
+  <body>
+
+	<button id=".clickme" onclick="changename()">Click Button</button>
+
+  </body>
+</html>
+
+
