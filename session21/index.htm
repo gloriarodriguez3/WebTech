@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+  });
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").remove();
+  });
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, p").addClass("red");
+    $("div").addClass("important");
+    $("div").delay("fast").fadeIn();
+  });
+});
+$(document).ready(function(){
+  $("button23").click(function(){
+    $("div11").animate({right: '250px'});
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: pink;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+.important {
+  font-weight: bold;
+  font-size: 50pt;
+}
+
+.red {
+  color: red;
+}
+
+</style>
+</head>
+<body>
+<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:burlywood">
+
+<p>This is a paragraph in the div.</p>
+<p>This is another paragraph in the div.</p>
+
+</div>
+<br>
+
+<button>Empty the div element  & Make Text Red & Bold text</button>
+ 
+<div id="flip">Click to have fun</div>
+<div id="panel">Peek-a-Boo!!</div>
+
+<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button>
+
+
+<button id="button23">Start Animation!!</button>
+
+<div id="div11" style="background:#4321bf;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
