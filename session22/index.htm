@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title> 
+  <!--  Bootstrap2.htm -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+    img {width:200px; height:200px;}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    
+    $("#col-sm-4").prop("This is first paragragh.", "NEW FIRST PARAGRAPGH");
+  });    
+    $(document).ready(function(){
+    $("img").click(function(){
+        // Change src attribute of image
+        $(this).attr("src", "whiterose.jpg");
+    });    
+});
+
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="navbar-brand" href="#">Gloria Rodriguez</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cities
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.dallasarboretum.org/">Flowers in Dallas</a></li>
+              <li><a href="https://arboretum.harvard.edu/">Flowers in Boston</a></li>
+              <li><a href="https://fairchildgarden.org/miami-botanical-garden/">Flowers in Miami</a></li>
+            </ul>
+          </li>
+                  <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+    </nav>
+    
+
+<div class="container">
+  <div class="jumbotron">
+  <h1>My first Bootstrap website!</h1>
+  <p>This is going to be a subtitle </p>
+</div>
+  <div class="row">
+<div class="col-sm-4" style="background-color:pink ;">
+  <p>This is first paragragh.</p>
+  <p>This is second paragraph.</p>
+
+</div>
+<div class="col-sm-6" style="background-color:rgb(213, 208, 243);">
+  <p>This is third paragraph.</p>
+  <p>This is fourth paragraph.</p>
+
+</div>
+<div class="col-sm-2" style="background-color:rgb(186, 195, 224);">
+  <p>This is fifth paragraph.</p>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-4" style="background-color: beige;">
+    <img src="sunflower-1508785046.jpg" alt="pic1">
+  </div>
+  <div class="col-sm-4" style="background-color:bisque;">
+    <img src="sunflower-1508785046.jpg" alt="pic1">
+
+    
+  </div>
+  <div class="col-sm-4" style="background-color: burlywood;">
+    <img src="sunflower-1508785046.jpg" alt="pic1">
+
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>
