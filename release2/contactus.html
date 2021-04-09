@@ -1,0 +1,185 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the best coffee and dessert shops in Dallas, Texas!">
+    <meta name="keywords" content="Dallas// Texas// Dessert// Coffee// Studying// Reviews">
+    <link rel="stylesheet" href="externalstylesheet.css" type= "text/css"/>
+    <title>Dallas Cravings</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+
+    <style>
+        h1 {text-align:center; font-family: 'Playfair Display', serif; color:rgb(243, 243, 243);}
+        .hero-image{background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("dallasmap.JPG");   width: 100vw;
+    height: 85vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;}
+  li {display: inline;  float: right; border-right: 2px solid white;}
+
+  ul {border: 12px solid white; list-style-type: none;
+      background-color: #FFF0F5; }
+li a {color: white; display: block;  text-align:center; font-size:15pt; padding: 25px 27px;
+    width:100px;
+    color: white;
+    text-decoration: none; }
+li a:hover {
+    background-color:rgb(128, 120, 129);}
+.active {background-color: #baafc7; color: white;}
+    li:last-child {
+  border-bottom: none;}
+  a {
+    display: block;
+    padding: 10px;
+    background-color: #baafc7;}
+#h1{text-align: left; font-size: 45pt;opacity:0.0;}
+#h3{text-align: left; font-size: 45pt;opacity:0.0;}
+#header{float:left; text-align:left; color:black;font-size: 45pt;}
+h1{color:black; font-size: 20pt; padding-bottom:30px;  text-align: center;}
+td {padding-right:40px; margin-left:auto; margin-right:auto; padding:15px;}
+#form{margin-left:auto; margin-right:auto; text-align:center;}
+#p1{text-align:center; font-size:14pt;}
+#let{text-align:center; font-size:30pt;}
+table{margin-left:auto; margin-right:auto; width:70%;}
+#gender{text-align:center;margin-left:auto; margin-right:auto}
+#was{text-align:center;margin-left:auto; margin-right:auto}
+#comment{text-align:center;margin-left:auto; margin-right:auto}
+#box1{text-align:center;margin-left:auto; margin-right:auto;}
+textarea{margin-left:auto; margin-right:auto; display:block;}
+fieldset{border-color:#baafc7; border-width:7px; border-style:solid;}
+.space{padding:20px;}
+form{margin-left:auto; margin-right:auto; width:50%;}
+legend{font-weight:bold; font-size:18px;padding:12px;}
+       </style>	
+    <script>
+        function validateForm() {
+  var x = document.forms["myForm"]["firstname"].value;
+  if (x == "") {
+    alert("First name must be filled out");
+    return false;
+  }
+}
+    </script>
+
+</head>
+
+<body>
+
+    <ul><li id="header"><h1>Contact Us</h1></li>
+        <li><a class="active" href="index.htm" target="_blank">Home</a></li>
+        <li><a href="aboutus.html" target="_blank">About Us</a></li>
+        <li><a href="contactus.html" target="_blank">Contact Us</a></li>
+<div class="dropdown-menu">
+<button class="menu-btn">Coffee Shops </button>
+<div class="menu-content">
+  <a class="links-hidden" href="lalaland.htm">La La Land Kind Cafe</a>
+  <a class="links-hidden" href="hola.htm">Hola Cafe</a>
+  <a class="links-hidden" href="saltydonut.htm">The Salty Donut</a>
+  <a class="links-hidden" href="merit.htm">Merit Coffee</a>
+</div>
+</div>
+  <div class="dropdown-menu">
+  <button class="menu-btn">Dessert Shops </button>
+          <div class="menu-content">
+            <a class="links-hidden" href="aquas.htm">Aqua S</a>
+            <a class="links-hidden" href="creamistry.htm"> Creamistry</a>
+            <a class="links-hidden" href="vals.htm">Val's Cheesecakes</a>
+            <a class="links-hidden" href="picole.htm">Picole Pops</a>
+          </div>
+          </div>
+      
+      </ul>
+
+
+<section class="hero-image">
+    <div class="hero-text">
+      <h3 id="h3"> Contact Us </h3>
+    </div>
+</section>
+<form action="http://wtspring13sec2.babson.edu/grodriguez3/mailer.php" method="post" name="myForm" onsubmit="return validateForm()">
+	<h1 id="let">Let Us Hear From You!</h1>	
+	<div id="p1">Please complete the following survey to give us feedback. When you are done,
+		please click on the Submit button.</div>
+        <fieldset> 
+            <legend>Your Information</legend>
+
+            <div class="space">
+            * First Name:
+            <input type="text" name="firstname" maxlength="100" placeholder="Enter Name Here">
+            </div>
+
+            <div class="space">
+            Last Name:
+                <input type="text" name="lastname" maxlength="100" placeholder="Enter Name Here">
+            </div>
+
+<div class="space">
+
+Gender:
+<label>Female
+    <input type ="radio" name="gender" value="female">
+</label>
+<label>Male
+    <input type ="radio" name="gender" value="male">
+    </label>
+</div>
+
+</fieldset>
+<fieldset> <legend>Content Feedback</legend>
+
+<div>
+    <div class="space">
+         Was this website helpful? 
+        <div>
+            <select name="D1">
+                <option value="">Select an Option</option>
+                <option value="Y">Yes</option>
+                 <option value="N">No</option>
+            </select>
+        </div>
+    </div>
+       
+</div>
+
+
+
+<div class="space">
+<div> What kind of places would you like to see more of from Dallas? </div>
+<div>
+    <input type="checkbox" name="coffeshop">
+    Coffee Shops
+</div>
+<div>
+    <input type="checkbox" name="restaurant">
+Restaurant
+</div>
+<div>
+    <input type="checkbox" name="Bars">
+ Bars
+</div>
+</div>
+
+<div id="comment"> Please add any comments you have below or text 8179324271 to contact us: </div>
+<br>
+
+<textarea id="box" name="comments" cols="50"></textarea>
+
+
+<div id="box1">
+
+<input type="submit" value="Submit" name="Submit" />
+ &nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;
+ <input type="reset" value="Reset" name="Reset" />
+</div>
+ </fieldset>
+
+		</form>
+    
+</body>
+</html>
+
+
+
