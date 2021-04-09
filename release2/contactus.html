@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the best coffee and dessert shops in Dallas, Texas!">
-    <meta name="keywords" content="Dallas// Texas// Dessert// Coffee// Studying// Reviews">
     <link rel="stylesheet" href="externalstylesheet.css" type= "text/css"/>
     <title>Dallas Cravings</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
@@ -53,16 +51,6 @@ fieldset{border-color:#baafc7; border-width:7px; border-style:solid;}
 form{margin-left:auto; margin-right:auto; width:50%;}
 legend{font-weight:bold; font-size:18px;padding:12px;}
        </style>	
-    <script>
-        function validateForm() {
-  var x = document.forms["myForm"]["firstname"].value;
-  if (x == "") {
-    alert("First name must be filled out");
-    return false;
-  }
-}
-    </script>
-
 </head>
 
 <body>
@@ -98,7 +86,7 @@ legend{font-weight:bold; font-size:18px;padding:12px;}
       <h3 id="h3"> Contact Us </h3>
     </div>
 </section>
-<form action="http://wtspring13sec2.babson.edu/grodriguez3/mailer.php" method="post" name="myForm" onsubmit="return validateForm()">
+<form action="http://wtspring13sec2.babson.edu/grodriguez3/mailer.php">
 	<h1 id="let">Let Us Hear From You!</h1>	
 	<div id="p1">Please complete the following survey to give us feedback. When you are done,
 		please click on the Submit button.</div>
@@ -106,7 +94,7 @@ legend{font-weight:bold; font-size:18px;padding:12px;}
             <legend>Your Information</legend>
 
             <div class="space">
-            * First Name:
+            First Name:
             <input type="text" name="firstname" maxlength="100" placeholder="Enter Name Here">
             </div>
 
@@ -161,7 +149,7 @@ Restaurant
 </div>
 </div>
 
-<div id="comment"> Please add any comments you have below or text 8179324271 to contact us: </div>
+<div id="comment">Please add any comments you have below or text 8179324271 to contact us: </div>
 <br>
 
 <textarea id="box" name="comments" cols="50"></textarea>
@@ -177,7 +165,6 @@ Restaurant
  </fieldset>
 
 		</form>
-    
 </body>
 </html>
 
